@@ -30,10 +30,9 @@
             name.innerHTML = `${data['username']}`;
             email.innerHTML = `${data['email']}`;
             password.innerHTML = `${data['password']}`;
-
-            let img = document.createElement('img');
-            img.setAttribute("src", `${data["profilepic"]}`);
-            profilepic.appendChild(img);  // Corrected this line to append the image element
+            console.log(data["profilepic"]);
+            let img = document.getElementById("profilepic")
+            img.setAttribute("src", `${data["profilepic"]}`);  // Corrected this line to append the image element
         });
 
 
